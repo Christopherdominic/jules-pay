@@ -1,0 +1,5 @@
+<svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="3" width="10" height="10" rx="1.5" fill="#FF8A1F"/>
+  <rect x="7" y="9" width="10" height="10" rx="1.5" stroke="#FF8A1F" stroke-width="2.5" fill="none"/>
+  <text x="24" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="currentColor">Jules <tspan fill="#FF8A1F">Pay</tspan></text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+    "outDir": "./dist/cjs",
+    "declaration": false,
+    "declarationMap": false,
+    // Node10 resolution ignores package.json "exports", so point the
+    // stellar-sdk subpath imports at their type declarations explicitly.
+    "baseUrl": ".",
+    "paths": {
+      "@stellar/stellar-sdk/contract": ["node_modules/@stellar/stellar-sdk/lib/contract/index.d.ts"],
+      "@stellar/stellar-sdk/rpc": ["node_modules/@stellar/stellar-sdk/lib/rpc/index.d.ts"]
+    }
+  }
+}

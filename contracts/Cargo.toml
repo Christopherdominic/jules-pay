@@ -1,0 +1,53 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "campaign-funding",
+    "dispute-arbiter",
+    "distributor",
+    "donor-verification",
+    "nft-stream",
+    "payment-stream",
+    "planter",
+    "soulbound-badge",
+    "sponsor-crowdfunding",
+    "sponsor-insurance",
+    "timelock",
+    "upgrade-proxy",
+    "verifier-penalty",
+    "campaign-funding",
+    "soulbound-badge",
+    "verifier-penalty",
+    "planter",
+    "campaign-verification-audit",
+    "dispute-arbiter",
+    "timelock",
+    "upgrade-proxy",
+    "sponsor-crowdfunding",
+    "sponsor-insurance",
+    "campaign-diversity",
+    "tax-deduction-certificate",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Christopherdominic/jules-pay"
+
+[workspace.dependencies]
+soroban-sdk = "=25.3.2"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true

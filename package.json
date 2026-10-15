@@ -1,0 +1,36 @@
+{
+  "name": "stellar_client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Jules Pay - Stellar blockchain client and smart contracts",
+  "scripts": {
+    "dev": "pnpm --filter @jules-pay/web dev",
+    "build": "pnpm --filter @jules-pay/web build",
+    "build:contracts": "cd contracts && cargo build --release",
+    "generate:sdk": "pnpm --filter @jules-pay/sdk generate",
+    "test:contracts": "cd contracts && cargo test",
+    "test:mobile": "pnpm --filter @jules-pay/mobile test",
+    "typecheck:mobile": "pnpm --filter @jules-pay/mobile typecheck",
+    "test:sdk": "pnpm --filter @jules-pay/sdk test",
+    "test:sdk:coverage": "pnpm --filter @jules-pay/sdk test:coverage",
+    "test:sdk:integration": "pnpm --filter @jules-pay/sdk test:integration",
+    "lint": "pnpm --filter @jules-pay/web lint",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "pnpm --filter @jules-pay/sdk build && changeset publish"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "jules-pay",
+    "payment-streaming",
+    "defi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Christopherdominic/jules-pay.git"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
+  }
+}
