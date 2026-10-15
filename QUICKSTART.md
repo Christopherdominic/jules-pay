@@ -22,12 +22,6 @@ A complete `waitForTransaction` helper for the Jules Pay Stellar SDK that allows
    - Integration guides
    - Troubleshooting section
 
-4. **IMPLEMENTATION_SUMMARY.md**
-   - Complete implementation overview
-
-5. **WAITFORTRANSACTION_TESTING.md**
-   - Testing and verification guide
-
 ### Modified Files
 1. **packages/sdk/src/index.ts**
    - Added: `export * from "./utils/transactions";`
@@ -110,8 +104,6 @@ pnpm build
 ## 📖 Documentation
 
 - **Complete API Docs**: [docs/sdk/waitForTransaction.md](docs/sdk/waitForTransaction.md)
-- **Testing Guide**: [WAITFORTRANSACTION_TESTING.md](WAITFORTRANSACTION_TESTING.md)
-- **Implementation Summary**: [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)
 - **SDK README**: [packages/sdk/README.md](packages/sdk/README.md)
 
 ## 🔍 Quick Verification
@@ -228,7 +220,6 @@ waitForTransaction(tx, rpcUrl, { timeout: 120000 })
 For questions or issues:
 1. Check [docs/sdk/waitForTransaction.md](docs/sdk/waitForTransaction.md)
 2. Review the [test cases](packages/sdk/src/__tests__/transactions.test.ts)
-3. See [WAITFORTRANSACTION_TESTING.md](WAITFORTRANSACTION_TESTING.md)
 
 ## ✨ Summary
 
